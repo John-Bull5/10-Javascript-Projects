@@ -228,7 +228,7 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 10rem;
+  height: 25rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
