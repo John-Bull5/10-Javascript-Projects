@@ -1,0 +1,283 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+body{
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100%, 20%);
+}
+.score-container{
+    margin-bottom: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    border: 1px solid green;
+}
+.score-container span{
+    background-color: hsl(var(--hue), 100%, 50%);
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 40%;
+    padding: 13px;
+    text-align: center;
+    text-transform: capitalize;
+}
+body.correct{
+    -hue: var(--hue-correct)
+}
+body.wrong{
+    --hue: var(--hue-wrong)
+}
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+.quiz {
+    width: 700px;
+    max-width: 80%;
+    background-color: teal;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+    text-transform: capitalize;
+}
+#display{
+    background-color: green;
+    float: right;
+    color: white;
+    padding: 10px;
+    width: 150px;
+    margin: 0 auto 10px;
+    text-align: center;
+}
+
+.btn-grid{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn {
+    -hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.answer-pending {
+    -hue: var(--hue-neutral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: red;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+.answer-pending:hover{
+    background-color: rosybrown;
+}
+.btn:hover{
+    border-color: black;
+}
+.btn-correct{
+    --hue: var(--hue-correct);
+    color: black;
+}
+.btn-wrong{
+    --hue: var(--hue-wrong);
+}
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px; 
+}
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hide{
+    display: none;
+}
+#question {
+    text-transform: capitalize;
+    text-align: center;
+}
+div#test{
+    border: 1px solid #000000;
+    padding: 10px 40px 40px 40px;
+    text-transform: capitalize;
+}
+#checkBtn{
+    padding: 10px;
+    color: green;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 6px;
+}
+.start-quiz{
+padding: 10px;
+text-transform: capitalize;
+font-weight: bolder;
+margin: 0 auto;
+background-color: rosybrown;
+outline: none;
+font-size: 16px;
+border-radius: 8px;
+}
+.form{
+    border: 2px solid black;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+}
+#questions-btns{
+    margin-top: 10px;
+}
+.form .reg{
+    display: block;
+    width: 100% !important;
+    padding: 10px;
+    outline: none;
+}
+.form input[type="submit"]{
+    padding: 10px;
+    color: white;
+    background-color: goldenrod;
+    margin-top: 5px;
+    font-size: 15px;
+}
+.dashboard{
+    border: 2px solid;
+    box-shadow: inset 1px 2px 7px 4px #fff;
+    background-color: greenyellow;
+}
+.dashboard h2{
+    text-align: center;
+    color: white;
+}
+.underline{
+    height: 3px;
+    width: 35%;
+    background-color: green;
+    margin: -10px auto;
+}
+.user-board{
+    height: 60vh;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: safe;
+    align-items: center;
+    color: white;
+}
+.pic{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: red;
+}
+.pic img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.name{
+    margin-top: 10px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.regno{
+margin-top: 10px;
+text-transform: capitalize;
+letter-spacing: 1px;
+}
+.exam-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    width: 40%;
+    text-align: center;
+}
+.text{
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: hsl(var(--hue), 100%, 50%);
+}
+#user-form{
+    height: 300px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    color: white;
+}
+.form-group {
+    margin-top: 15px;
+    width: 90%;
+}
+
+.form-group label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 90%;
+    display: block;
+    margin-top: 10px;
+    padding-top: 10px;
+    outline: none;
+}
+
+input[type=submit] {
+    display: block;
+    margin-top: 15px;
+    color: white;
+    font-size: 15px;
+    width: 50%;
+    background: blue;
+}
+input[type=tel]{
+    color: black;
+}
