@@ -190,6 +190,10 @@ nav {
   justify-content: space-between;
   padding: 1rem;
 }
+.john{
+  color: #49a6e9;
+  font-weight: bold;
+}
 .nav-toggle {
   font-size: 1.5rem;
   color: var(--clr-primary-5);
@@ -218,6 +222,7 @@ nav {
   background: var(--clr-primary-8);
   color: var(--clr-primary-5);
   padding-left: 1.5rem;
+  text-decoration: underline;
 }
 .social-icons {
   display: none;
@@ -228,7 +233,7 @@ nav {
   transition: var(--transition);
 }
 .show-links {
-  height: 25rem;
+  height: 20rem;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
@@ -268,4 +273,42 @@ nav {
   .social-icons a:hover {
     color: var(--clr-primary-7);
   }
+}
+@media screen and (max-width: 916px){
+  .projectContainer .project:last-child {
+    margin-bottom: 0 !important;
+  }
+}
+
+.projectContainer{
+  background-color: var(--clr-grey-10);
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projectContainer .project{
+  display: block;
+  width: 300px;
+  height: 200px;
+  border: 1px solid var(--clr-green-dark);
+  box-shadow: var(--dark-shadow);
+  padding: 10px;
+  margin-top: 2rem;
+  text-align: center;
+}
+.projectContainer .project:last-child {
+  margin-bottom: 4rem ;
+}
+.projectContainer .project:hover{
+  background-color: var(--clr-primary-9);
+  transform: scale(1.1);
+  transition: all .3s linear;
+}
+.projectContainer .project .project-title{
+  text-transform: capitalize;
+  margin-top: 5px;
+  font-weight: 500;
 }
