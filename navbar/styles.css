@@ -291,11 +291,11 @@ nav {
 
 .projectContainer .project{
   display: block;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 210px;
   border: 1px solid var(--clr-green-dark);
   box-shadow: var(--dark-shadow);
-  padding: 10px;
+  padding: 12px;
   margin-top: 2rem;
   text-align: center;
 }
@@ -309,6 +309,6 @@ nav {
 }
 .projectContainer .project .project-title{
   text-transform: capitalize;
-  margin-top: 5px;
+  margin-bottom: 3px; 
   font-weight: 500;
 }
